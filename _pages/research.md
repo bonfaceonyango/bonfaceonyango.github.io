@@ -6,8 +6,12 @@ sitemap: false
 permalink: /research/
 ---
 
-# Research
+# Research Interests
 
-Microbial Bioinformatics
-Comparative genomics
-Machine Learning
+- Microbial Bioinformatics
+
+- Comparative genomics
+
+- Machine Learning
+
+- Evolutionary biology
