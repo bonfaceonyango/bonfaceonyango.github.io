@@ -1,7 +1,7 @@
 ---
 title: "Research"
 layout: default
-excerpt: "RT2 Lab -- Research"
+excerpt: "Beiko Lab -- Softwares"
 sitemap: false
 permalink: /software/
 ---
