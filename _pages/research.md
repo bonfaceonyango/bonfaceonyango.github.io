@@ -9,4 +9,3 @@ permalink: /research/
 
 # Research
 Coming soon ...
-- 
