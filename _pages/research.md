@@ -1,5 +1,5 @@
 ---
-title: "Software"
+title: "Research"
 layout: default
 excerpt: "Beiko Lab -- Software"
 sitemap: false
