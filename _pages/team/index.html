@@ -50,8 +50,12 @@ permalink: /team/
 
         <div class="col-md-10">
             <div class="card-body">
-            <h4 class="card-title">{{ member.title }}</h4>
-            <p class="card-text">{{ member.role }}</p>
+                <h4 class="card-title">
+                    <a href="{{ member.url }}" style="text-decoration: none; color: inherit;">
+                        {{ member.title }}
+                    </a>
+                </h4>
+                <p class="card-text">{{ member.role }}</p>
             </div>
         </div>
     </div>
