@@ -4,7 +4,7 @@ category: student
 title: Bonface Onyango
 image: bonface.png
 role: PhD Student
-permalink: 'team/researcher-name'
+permalink: 'team/bonface'
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
