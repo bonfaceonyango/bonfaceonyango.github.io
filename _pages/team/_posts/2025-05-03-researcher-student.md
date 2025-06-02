@@ -1,10 +1,10 @@
 ---
 layout: member
 category: student
-title: Bonface Onyango
-image: bonface.png
+title: Mohamed Fares
+image: researcher.png
 role: PhD Student
-permalink: 'team/bonface'
+permalink: 'team/mohamed'
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
@@ -14,9 +14,6 @@ social:
     orcid: https://orcid.org/
     research-gate: https://www.researchgate.net/
 education:
- - Interdisciplinary PhD student (Started Sep. 2024)
- - MSc Bioinformatics, Pwani University, Kenya 
- - B.Sc. Biochemistry, Egerton University, Kenya
 interests:
 - Comparative genomics
 - Evolutionary Biology
@@ -24,5 +21,5 @@ interests:
 - Antimicrobial resistance
 - 
 ---
-Antimicrobial resistance (AMR) genes frequently spread via horizontal gene transfer alongside neighbouring genes. My research focuses on developing comparative genomics and machine learning approaches that incorporate genomic neighborhood information to better detect divergent AMR genes and phenotypic resistance, potentially reducing the extent of antibiotic misuse.
+My scientific journey began in the labs of Cairo, where I studied everything from fish health to drug design, always asking how computation could solve biological puzzles. Today, as a bioinformatician at Dalhousie University, I’m tackling one of my most exciting challenges yet: decoding marine biodiversity through eDNA. Whether it’s designing and optimising analysis pipelines or collaborating on biodiversity monitoring research, I love turning data into actionable insights for conservation. Before joining the lab, I collaborated on projects from RNA degradation prediction (Kaggle gold medalist!) to new antiviral drug discovery. Science, to me, is a collaborative adventure, and I’m grateful to be part of a lab that values both innovation and community.  
 
