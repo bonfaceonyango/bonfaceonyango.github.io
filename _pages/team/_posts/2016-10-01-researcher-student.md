@@ -14,7 +14,9 @@ social:
     orcid: https://orcid.org/
     research-gate: https://www.researchgate.net/
 education:
- - Education
+ - PhD Candidate 
+ - BSc (Concordia University, Montreal, Canada)
+
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+I am interested in how methodological choices shape our interpretation of microbial communities, and in how we correct for them. By quantifying and correcting biases in high-throughput sequencing, I build reproducible pipelines that more accurately reflect biological patterns, and apply them for describing community responses to environmental disturbances in multi-year microbiome time series. 
