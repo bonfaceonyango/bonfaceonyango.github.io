@@ -6,7 +6,8 @@ sitemap: false
 permalink: /
 ---
 
-## WELCOME
+
+# About
 
 This website contains links to research, software, and information about the people of the Beiko Lab at Dalhousie University.
 
