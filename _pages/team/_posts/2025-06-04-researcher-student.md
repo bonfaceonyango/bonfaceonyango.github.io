@@ -1,9 +1,9 @@
 ---
 layout: member
 category: student
-title: Bonface Onyango
+title: Ben Fisher
 image: ben.png
-role: PhD Student
+role: Regional Coordinator for the Canadian Bioinformatics Hub
 permalink: 'team/ben'
 social:
     twitter: https://twitter.com/
