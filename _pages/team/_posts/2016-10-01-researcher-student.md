@@ -4,7 +4,7 @@ category: student
 title: Diana Haider 
 image: researcher.png
 role: PhD Student
-permalink: 'team/researcher-name'
+permalink: 'team/diana'
 social:
     twitter: https://twitter.com/
     linkedin: https://www.linkedin.com/
