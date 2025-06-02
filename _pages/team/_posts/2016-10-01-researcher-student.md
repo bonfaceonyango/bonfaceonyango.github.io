@@ -1,7 +1,7 @@
 ---
 layout: member
 category: student
-title: Researcher Name
+title: Diana Haider 
 image: researcher.png
 role: PhD Student
 permalink: 'team/researcher-name'
