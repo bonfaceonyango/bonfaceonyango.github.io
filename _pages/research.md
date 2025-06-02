@@ -1,12 +1,11 @@
 ---
-title: "Research"
+title: "Software"
 layout: default
-excerpt: "Beiko Lab -- Softwares"
+excerpt: "Beiko Lab -- Software"
 sitemap: false
 permalink: /software/
 ---
 
-# Research Interests
-
+# Software
 - Arete
 - 
