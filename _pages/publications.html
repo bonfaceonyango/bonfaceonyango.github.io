@@ -16,26 +16,44 @@ permalink: /publications/
             <a data-toggle="collapse" data-parent="#accordion"
                href="#collapse{{forloop.index}}"
                style="color: inherit;">
-            <!-- authors -->
-            {% assign authors = "" | split:"/" %}
-            {% for author in publi.author %}
-                {% assign authors = authors | push: author.family %}
-            {% endfor %}
-            {{ authors | array_to_sentence_string }},
+         <!-- authors-APA format -->
+        {% assign formatted_authors = "" | split:"/" %}
+        {% for author in publi.author %}
+        {% assign initials = "" %}
+        {% for name in author.given | split: " " %}
+            {% assign initials = initials | append: name | slice: 0 | append: ". " %}
+        {% endfor %}
+        {% assign full_name = author.family | append: ", " | append: initials | strip %}
+        {% assign formatted_authors = formatted_authors | push: full_name %}
+        {% endfor %}
 
-            <!-- title with link -->
-            "{{ publi.title }}",
+        {% assign num_authors = formatted_authors | size %}
+        {% if num_authors > 1 %}
+        {% assign last_author = formatted_authors | last %}
+        {% assign authors_except_last = formatted_authors | slice: 0, num_authors | pop %}
+        {{ authors_except_last | join: ", " }}, & {{ last_author }}
+        {% else %}
+        {{ formatted_authors | first }}
+        {% endif %}
 
-            <!-- container -->
-            <b>{{ publi.container-title }}</b>
+        <!-- year -->
+        {% assign year = publi.issued["date-parts"] | first | first %}
+        ({{ year }}).
 
-            <!-- issued date -->
-            ({{ publi.issued.date-parts | jsonify | slice: 3,4 }}),
+        <!-- title (sentence case, no quotes, no italics) -->
+        {{ publi.title | downcase | capitalize }}.
 
-            <!-- DOI -->
-            {% if publi.DOI %}
-                <a href="https://doi.org/{{publi.DOI}}">DOI:{{publi.DOI}}</a>
-            {% endif %}
+        <!-- journal name (italic) -->
+        <b>{{ publi.container-title }}</b>
+
+        <!-- volume(issue), pages -->
+        {% if publi.volume %}<i>{{ publi.volume }}</i>{% endif %}{% if publi.issue %}({{ publi.issue }}){% endif %}{% if publi.page %}, {{ publi.page }}.{% else %}.{% endif %}
+
+        <!-- DOI -->
+        {% if publi.DOI %}
+        <a href="https://doi.org/{{ publi.DOI }}">https://doi.org/{{ publi.DOI }}</a>
+        {% endif %}
+
             </a>
         </div>
 
