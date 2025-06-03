@@ -8,4 +8,3 @@ permalink: /software/
 
 # Software
 - Arete
-- 
