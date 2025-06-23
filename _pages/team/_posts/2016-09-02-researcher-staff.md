@@ -1,6 +1,6 @@
 ---
 layout: member
-category: student
+category: staff
 title: Ben Fisher
 image: ben.png
 role: Regional Coordinator for the Canadian Bioinformatics Hub
