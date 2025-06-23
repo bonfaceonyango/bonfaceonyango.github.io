@@ -24,5 +24,5 @@ interests:
 - Antimicrobial resistance
 - Bioinformatics software development
 ---
-Antimicrobial resistance (AMR) genes frequently spread via horizontal gene transfer alongside neighbouring genes. My research focuses on developing comparative genomics and machine learning approaches that incorporate genomic neighborhood information to better detect divergent AMR genes and phenotypic resistance, potentially reducing the extent of antibiotic misuse.
+Antimicrobial resistance (AMR) genes frequently spread via horizontal gene transfer alongside neighbouring genes. My research focuses on developing comparative genomics and machine learning approaches that incorporate genomic neighborhood and gene order information. The  impact of my research is to potentially reduce the wicked burden of AMR by improving the detection of hidden AMR threats (a.k.a uknown uknowns),understanding underlying mechanisms of AMR, and perhaps enable identification of the AMR threats in poorly characterized settings across One-Health Consontium.
 
