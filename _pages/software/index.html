@@ -1,0 +1,100 @@
+---
+title: "Team"
+layout: default
+excerpt: "Beiko Lab: Team members"
+sitemap: false
+permalink: /team/
+---
+<h1></h1>
+<h1>{{page.title}}</h1>
+
+<!-- Principal-investigator -->
+
+<h2><a id="pi"></a>Principal Investigator</h2>
+{% assign members = site.posts | where: 'category', 'pi' | sort: 'date' %}
+{% for member in members %}
+<div class="card team-member-card">
+    <div class="row mt-3">
+        <div class="col-md-2">
+            <a href={{member.url}}>
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
+                    class="card-img img-responsive img-thumbnail"
+                    style="max-width: 100px;"/>
+            </a>
+        </div>
+
+      <div class="col-md-10">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="{{ member.url }}" style="text-decoration: none; color:rgb(16, 158, 240);">
+                        {{ member.title }}
+                    </a>
+                </h4>
+                {% assign role_lines = member.role | newline_to_br | split: '<br />' %}
+                <p class="card-text">{{ role_lines[0] }}</p> 
+                <!-- <p class="card-text">  {{ member.role | split: '\n' | first }}</p> -->
+                
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<!-- Staff -->
+
+<h2><a id="staff"></a>Staff</h2>
+{% assign members = site.posts | where: 'category', 'staff' | sort: 'date' %}
+{% for member in members %}
+<div class="card team-member-card">
+    <div class="row mt-3">
+        <div class="col-md-2">
+            <a href={{member.url}}>
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
+                    class="card-img img-responsive img-thumbnail"
+                    style="max-width: 100px;"/>
+            </a>
+        </div>
+
+      <div class="col-md-10">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="{{ member.url }}" style="text-decoration: none; color:rgb(16, 158, 240);">
+                        {{ member.title }}
+                    </a>
+                </h4>
+                <p class="card-text">{{ member.role }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<!-- Students -->
+
+<h2><a id="student"></a>Students</h2>
+{% assign members = site.posts | where: 'category', 'student' | sort: 'date' %}
+{% for member in members %}
+<div class="card team-member-card">
+    <div class="row mt-3">
+        <div class="col-md-2">
+            <a href={{member.url}}>
+                <img src="{{ site.url }}{{ site.baseurl }}/images/team/{{ member.image }}"
+                    class="card-img img-responsive img-thumbnail"
+                    style="max-width: 100px;"/>
+            </a>
+        </div>
+
+        <div class="col-md-10">
+            <div class="card-body">
+                <h4 class="card-title">
+                    <a href="{{ member.url }}" style="text-decoration: none; color:rgb(16, 158, 240);">
+                        {{ member.title }}
+                    </a>
+                </h4>
+                <p class="card-text">{{ member.role }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endfor %}
