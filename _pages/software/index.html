@@ -11,7 +11,7 @@ permalink: /software/
 <!-- Tool -->
 
 <h2><a id="staff"></a>Tool</h2>
-{% assign members = site.posts | where: 'category', 'tool' | sort: 'date' %}
+{% assign members = site.tools | where: 'category', 'tool' | sort: 'date' %}
 {% for member in members %}
 <div class="card team-member-card">
     <div class="row mt-3">
