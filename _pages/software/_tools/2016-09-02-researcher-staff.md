@@ -1,5 +1,5 @@
 ---
-layout: member
+layout: software
 category: staff
 title: Arete
 image: arete.png
