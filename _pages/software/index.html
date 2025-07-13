@@ -10,14 +10,14 @@ permalink: /software/
 
 <!-- Principal-investigator -->
 
-<h2><a id="pi"></a>Principal Investigator</h2>
-{% assign members = site.posts | where: 'category', 'pi' | sort: 'date' %}
+<!-- <h2><a id="pi"></a>Beko lab tools</h2> -->
+{% assign members = site.tools | where: 'category', 'tool' | sort: 'date' %}
 {% for member in members %}
 <div class="card team-member-card">
     <div class="row mt-3">
         <div class="col-md-2">
-            <a href={{member.url}}>
-                <img src="{{ site.url }}{{ site.baseurl }}/images/tools/{{ tool.image }}"
+            <a href={{software.url}}>
+                <img src="{{ site.url }}{{ site.baseurl }}/images/tools/{{ software.image }}"
                     class="card-img img-responsive img-thumbnail"
                     style="max-width: 100px;"/>
             </a>
@@ -26,13 +26,12 @@ permalink: /software/
       <div class="col-md-10">
             <div class="card-body">
                 <h4 class="card-title">
-                    <a href="{{ member.url }}" style="text-decoration: none; color:rgb(16, 158, 240);">
-                        {{ member.title }}
+                    <a href="{{ software.url }}" style="text-decoration: none; color:rgb(16, 158, 240);">
+                        {{ software.title }}
                     </a>
                 </h4>
-                {% assign role_lines = member.role | newline_to_br | split: '<br />' %}
-                <p class="card-text">{{ role_lines[0] }}</p> 
-                <!-- <p class="card-text">  {{ member.role | split: '\n' | first }}</p> -->
+            
+                <p class="card-text">  {{ software.roles }}</p>
                 
             </div>
         </div>
