@@ -11,13 +11,13 @@ permalink: /software/
 <!-- Principal-investigator -->
 
 <!-- <h2><a id="pi"></a>Beko lab tools</h2> -->
-{% assign members = site.tools | where: 'category', 'tool' | sort: 'date' %}
-{% for member in members %}
+{% assign tools = site.tools | where: 'category', 'tool' | sort: 'date' %}
+{% for tool in tools %}
 <div class="card team-member-card">
     <div class="row mt-3">
         <div class="col-md-2">
-            <a href={{software.url}}>
-                <img src="{{ site.url }}{{ site.baseurl }}/images/tools/{{ software.image }}"
+            <a href={{tool.url}}>
+                <img src="{{ site.url }}{{ site.baseurl }}/images/tools/{{ tool.image }}"
                     class="card-img img-responsive img-thumbnail"
                     style="max-width: 100px;"/>
             </a>
@@ -27,11 +27,11 @@ permalink: /software/
             <div class="card-body">
                 <h4 class="card-title">
                     <a href="{{ software.url }}" style="text-decoration: none; color:rgb(16, 158, 240);">
-                        {{ software.title }}
+                        {{ tool.title }}
                     </a>
                 </h4>
             
-                <p class="card-text">  {{ software.roles }}</p>
+                <p class="card-text">  {{ tool.roles }}</p>
                 
             </div>
         </div>
