@@ -1,5 +1,5 @@
 ---
-layout: member
+layout: software
 category: tool
 title: Arete
 image: arete.png
