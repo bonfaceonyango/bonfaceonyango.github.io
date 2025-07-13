@@ -1,10 +1,9 @@
 ---
-layout: software
+layout: member
 category: tool
 title: Arete
 image: arete.png
-role: |
-  Studying AMR and microbial evoluion, trasmission and ecology
+role: Studying AMR and microbial evoluion, trasmission and ecology
   
 permalink: 'software/arete'
 social:
