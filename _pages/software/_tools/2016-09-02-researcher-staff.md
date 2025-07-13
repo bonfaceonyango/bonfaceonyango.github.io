@@ -3,7 +3,7 @@ layout: member
 category: staff
 title: Arete
 image: arete.png
-role: Explore AMR evolution, transmission and Ecology
+role: Explore AMR and bacteria evolution, transmission and ecology
 permalink: 'team/researcher-name'
 social:
     twitter: https://twitter.com/
